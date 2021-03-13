@@ -37,8 +37,7 @@ alpha=10
 
 We can see that learning rates greater than 0.05 are slightly more difficult to converge to 0.
 
-## F 
-### Plot a histogram of the weights finnaly obtained from learing. A strong peak at zero remains. Why ? You may understad this when plotting the weights as an image. 
+## F - Plot a histogram of the weights finnaly obtained from learing. A strong peak at zero remains. Why ? You may understad this when plotting the weights as an image. 
 
 Weights Histogramms
 ![Weights.PNG](Weights.PNG)
@@ -46,9 +45,9 @@ Weights Histogramms
 Weights Image
 ![Weights-Image.PNG](Weights-Image.PNG)
 
-We can see that the many 0 come from the black background on the edge of the numbers. 
+We can see that the many 0 come from the black background on the backgrounf around the numbers.
 
-### Also compare this image with the misclassifed test images. Try to explain
+## F - Also compare this image with the misclassifed test images. Try to explain
 
 ![Missclassified.PNG](Missclassified.PNG)
 
