@@ -49,3 +49,25 @@ From about 20 epochs the cost and error of the test set does not go down anymore
 ![ErrorE=50.PNG](ErrorE=50.PNG)
 
 Batch size does not seem to show a significant influence on the cost and error of the model
+
+
+
+## Exercice 2
+
+a) See the appended file for gradient descent derivatives
+
+b) See the implementation in the .ipynb file
+
+c)  When the input and/or the output data are not normalized, the model does not converge on training. The normalization of the output is mandatory because the activation function on the last layer is normalized. The normalisation of the input is necessary so that there is no problem of vanishing gradient when the range of the input is too large. With input normalization, we expect the data to have a distribution centered around 0 with a small standard deviation (1).
+
+d) after many tries and errors, it has been determined that the best hyper-parameters are:
+
+- epochs : 300. Under 250 epochs fitting is complicated.
+- learning rate : 0.07. It has to be coordinated with the batch size.
+- number of neurons : 12. Less than 10 neurons will start to give poor results.
+- batch size : 2. When the it increase, the cost wiggles less.
+
+
+By decreasing the batch size, we had to decrease the learning rate. The number of epochs needed for the model to converge is then smaller. Also after many tries, we have determined the number of neurons can be reduced.
+
+With the parameters proposed here, the final cost is approximatly the same as with with initial parameters, but the convergence is much faster.
