@@ -6,16 +6,19 @@
 ## Exercise 1
 ### Learning rate variation [batch_size=256,epochs=100]
 * learning rate = 0.05
-![CostA=0.05.PNG](CostA=0.05.PNG)
-![ErrorA=0.05.PNG](ErrorA=0.05.PNG)
+
+<img src="CostA=0.05.PNG" alt="drawing" width="300"/>
+<img src="ErrorA=0.05.PNG" alt="drawing" width="300"/>
 
 * learning rate = 0.1
-![CostA=0.1.PNG](CostA=0.1.PNG)
-![ErrorA=0.1.PNG](ErrorA=0.1.PNG)
+
+<img src="CostA=0.1.PNG" alt="drawing" width="300"/>
+<img src="ErrorA=0.1.PNG" alt="drawing" width="300"/>
 
 * learning rate = 0.5
-![CostA=0.5.PNG](CostA=0.5.PNG)
-![ErrorA=0.5.PNG](ErrorA=0.5.PNG)
+
+<img src="CostA=0.5.PNG" alt="drawing" width="300"/>
+<img src="ErrorA=0.5.PNG" alt="drawing" width="300"/>
 
 We see that the model with a learning rate of 0.5 seems to converge faster and better than the others.
 
@@ -23,12 +26,15 @@ The higher the learning rate, the more the curve oscillates as opposed to the cu
 
 ### Epochs variation [learning_rate=0.5, batch_size=256]
 * Epochs = 50
-![CostE=50.PNG](CostE=50.PNG)
-![ErrorE=50.PNG](ErrorE=50.PNG)
+
+<img src="CostE=50.PNG" alt="drawing" width="300"/>
+<img src="ErrorE=50.PNG" alt="drawing" width="300"/>
 
 * Epochs = 100
-![CostA=0.1.PNG](CostA=0.1.PNG)
-![ErrorA=0.1.PNG](ErrorA=0.1.PNG)
+
+<img src="CostA=0.1.PNG" alt="drawing" width="300"/>
+<img src="ErrorA=0.1.PNG" alt="drawing" width="300"/>
+
 
 We can see that the model converges with few epochs, 50 epochs are enough to make the model converge. 
 
@@ -37,19 +43,21 @@ From about 20 epochs the cost and error of the test set does not go down anymore
 ### Batch size variation [learning_rate=0.1, epochs=50]
  
 * Batch size = 64
-![CostB=64.PNG](CostB=64.PNG)
-![ErrorB=64.PNG](ErrorB=64.PNG)
+
+<img src="CostB=64.PNG" alt="drawing" width="300"/>
+<img src="ErrorB=64.PNG" alt="drawing" width="300"/>
 
 * Batch size = 128
-![CostB=128.PNG](CostB=128.PNG)
-![ErrorB=128.PNG](ErrorB=128.PNG)
+
+<img src="CostB=128.PNG" alt="drawing" width="300"/>
+<img src="ErrorB=128.PNG" alt="drawing" width="300"/>
 
 * Batch size = 256
-![CostE=50.PNG](CostE=50.PNG)
-![ErrorE=50.PNG](ErrorE=50.PNG)
+
+<img src="CostE=50.PNG" alt="drawing" width="300"/>
+<img src="ErrorE=50.PNG" alt="drawing" width="300"/>
 
 Batch size does not seem to show a significant influence on the cost and error of the model
-
 
 
 ## Exercice 2
