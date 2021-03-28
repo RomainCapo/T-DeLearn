@@ -49,17 +49,22 @@ test error = 0.03942857142857143
 ![b256l0.1e50.PNG](b256l0.1e50.PNG)
 
 This time we see that the model does not overfit. For our neural network architecture with 3 hidden layers, these parameters seem the best
+
 ### Conclusion
-It can be seen that the 3 hidden layer model overfits more than the 1 hidden layer model. This is because the architecture of the model is too complex and it has too many parameters. We can also see that the more the model overfits the lower the test errors. So we have to find a compromise for the model between low test error and low overfitting. Compared to the experiment above, the model which seems to respect this compromise the best is: **The model with one hidden layer with Batch size = 256, Learning rate = 0.1, Epoch = 100**
+It can be seen that the 3 hidden layer model overfits more than the 1 hidden layer model. This is because the architecture of the model is too complex and it has too many parameters. We can also see that the test error varies little from one model to another. Compared to the experiment above, the model which seems to respect this compromise the best is: **The model with one hidden layer with Batch size = 256, Learning rate = 0.1, Epoch = 50**
 
 It is this model which will be selected.
 
 ## Exercise 4
 With the model with one hidden layer with Batch size = 256, Learning rate = 0.1, Epoch = 100 the following result are obtained : 
-* Categorical Crossentropy Error : 0.1632261723279953
+* Test error = 0.0656554639339447 
 ![ex4.PNG](ex4.PNG)
 
-We can see that the loss graph has a similar shape to the version without Keras. We also see that for the same model Keras has a smaller error than the same model without Keras.
+We can see that the loss graph has a similar shape to the version without Keras. It can be seen that the Keras model has a slightly higher error than the version without Keras.
 
 We can see below the accuracy and loss plot on tensorboard:
 ![ex4-1.PNG](ex4-1.PNG)
+
+We can see that with Keras unlike the from scratch version it seems possible to increase the number of epochs significantly without overfitting and improving the error.
+* Test error = 0.03458318829536438 
+![ex4-12.PNG](ex4-2.PNG)
