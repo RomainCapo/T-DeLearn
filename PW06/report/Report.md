@@ -14,6 +14,8 @@ Initialisation with random distribution of param (0,1) :
 initializer = tf.keras.initializers.RandomNormal(mean=0.0, stddev=1.0)
 ```
 
+![activation3layers.PNG](activation3layers.PNG)
+
 ## Point D
 Here is the baseline score obtained from the model with : 
 * 3 hidden layers (150 units, 100 units, 50 units)
