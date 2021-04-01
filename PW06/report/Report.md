@@ -1,6 +1,7 @@
-# Report
+# T-DeLearn - PW06
 * Capocasale Romain
 * Demeusy Jean
+* 01.04.2021
 
 ## Point B
 Initialisation Glorot :
