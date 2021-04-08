@@ -23,12 +23,22 @@ Here is the baseline score obtained from the model with :
 * Initialization of weights with GlorotNormal 
 * Batch size of 16
 * Learning rate of 0.1
-* 20 epochs
+* 50 epochs
 ![baseline_plot.PNG](baseline_plot.PNG)
 ![baseline_score.PNG](baseline_score.PNG)
 
+We add a Dropout layer after each Dense layer (execpet the last) with the following line : 
+
+```python
+layers.append(tf.keras.layers.Dropout(0.5))
+```
+
 Score with droupout :
-...
+![dropout_plot.PNG](dropout_plot.PNG)
+![dropout_score.PNG](dropout_score.PNG)
+
+In this case there is not necessarily an improvement on the baseline. The scores obtained for the baseline are already very high and it is difficult to beat them. In this case, the dropout does not improve the results.
+
 ## Point E
 code : 
 ```python
