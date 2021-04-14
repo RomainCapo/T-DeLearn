@@ -24,7 +24,7 @@ initializer = tf.keras.initializers.RandomNormal(mean=0.0, stddev=1.0)
 
 ![mnist_tree_hidden_layer_random_normal_jdu.png](mnist_tree_hidden_layer_random_normal_jdu.png)
 
-It seams that the first layer (named "dense") has only learned the bias, and not the weight yet. The second layer (named "dense_1") has learned a bit more on the weight taht the first layer, but still the evolution of the activation is subtle.
+It seams that the first layer (named "dense") has only learned the bias, and not the weight yet. The second layer (named "dense_1") has learned a bit more on the weight than the first layer, but still the evolution of the activation is subtle.
 
 ## Point D
 
