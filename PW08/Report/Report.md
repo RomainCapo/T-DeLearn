@@ -49,6 +49,9 @@ Loss/acc plot:
 
 Discussion from previous exercice : 
 
+We can see that the model based on CNN is way more accurate than the previous MLP model : the accuracy with CNN layers is around 6% higher than the Dense network. This seams logical, as the type of layer used here is coherent with the type of data passing through the network (images). CNN layers allows to keep spatial information in the image, where MLP flatten all dimensions to a single vector for each image.
+
+
 ### Deeper CNN
 | CNN | Architecture                                                                                                                       | Acc. train % | Acc. test% |
 |-----|------------------------------------------------------------------------------------------------------------------------------------|--------------|------------|
