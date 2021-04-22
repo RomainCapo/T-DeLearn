@@ -3,6 +3,40 @@
 * Jean Demeusy
 * 29.04.2021
 
+## Exercice 2
+
+### One-layer network and weight visualisation
+| Dense | Architecture                                                                                                                       | Acc. train % | Acc. test% |
+|-----|------------------------------------------------------------------------------------------------------------------------------------|--------------|------------|
+| 1   | Layer1: DENSE 10 neurons, activation = "softmax", l2 regularization   | 33.3 | 33.7 |
+
+Loss/acc plot:
+
+![ex2_1_plot.PNG](ex2_1_plot.PNG)
+
+Weights visualisation
+
+![ex2_1_weights.PNG](ex2_1_weights.PNG)
+
+### Two-layers network
+| Dense | Architecture                                                                                                                       | Acc. train % | Acc. test% |
+|-----|------------------------------------------------------------------------------------------------------------------------------------|--------------|------------|
+| 1   | Layer1: DENSE 128 neurons, activation = "relu"; Layer2: DENSE 10 neurons, activation = "softmax". batch size: 128   | 45.5 | 44.2 |
+
+Loss/acc plot:
+
+![ex2_2_plot.PNG](ex2_2_plot.PNG)
+
+
+| Dense | Architecture                                                                                                                       | Acc. train % | Acc. test% |
+|-----|------------------------------------------------------------------------------------------------------------------------------------|--------------|------------|
+| BEST   | Layer1: DENSE 128 neurons, activation = "relu"; Layer2: DENSE 32 neurons, activation = "relu";  Layer3: DENSE 10 neurons, activation = "softmax". batch size: 256  | 51.3 | 47.4 |
+
+Loss/acc plot:
+
+![ex2_2_plot_best.PNG](ex2_2_plot_best.PNG)
+
+
 ## Exercice 3
 ### Simple CNN
 | CNN | Architecture                                                                                                                       | Acc. train % | Acc. test% |
