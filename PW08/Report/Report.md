@@ -3,6 +3,18 @@
 * Jean Demeusy
 * 29.04.2021
 
+## Exercice 1
+
+a) 
+
+![ex1_a.PNG](ex1_a.PNG)
+
+With S = 1 and P = 1, the output is the same dimension as the input. The padding requiered to get the same size is P = (size(weights)-1) / 2 = (3-1)/2 = 1.
+
+b)
+
+
+
 ## Exercice 2
 
 ### One-layer network and weight visualisation
