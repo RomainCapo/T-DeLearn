@@ -13,6 +13,20 @@ With S = 1 and P = 1, the output is the same dimension as the input. The padding
 
 b)
 
+**How many activation maps will we obtain ?** 
+We will have **2** actiavtion maps because there are 2 filters in the convolution layer.
+
+**With S = 1 and P = 0, what will be the dimension of the output volume ?**
+As there is no padding and with a stride of 1, we will get an activation map of size 3x3, as there are 2 activation maps the output volume is **3x3x2**.
+
+**With S = 2 and P = 0, what will be the dimension of the output volume ?**
+
+Same principle as above, with a stride of 2 the output volume will be **2x2x2**.
+
+**Give a filter size, padding value and stride value that will preserve the spatial dimension of the input.**
+* Filter size = 2x2x3
+* Padding value = 1
+* Stride = 1
 
 
 ## Exercice 2
@@ -53,7 +67,7 @@ Loss/acc plot:
 ### Simple CNN
 | CNN | Architecture                                                                                                                       | Acc. train % | Acc. test% |
 |-----|------------------------------------------------------------------------------------------------------------------------------------|--------------|------------|
-| 1   | Layer1 : CONV D=32, w=h=3, S=1, P='same', activation='relu;  Layer2 : MAXPOOL S=1, size=2; Layer3 : DENSE 10, activation='softmax' |     57.0     |    51.5    |
+| 1   | Layer1 : CONV D=32, w=h=3, S=1, P='same', activation='relu;  Layer2 : MAXPOOL S=1, size=2; Layer3 : DENSE 10, activation='softmax' |     57.0     |    51.8    |
 
 Loss/acc plot:
 
@@ -61,7 +75,7 @@ Loss/acc plot:
 
 Discussion from previous exercice : 
 
-We can see that the model based on CNN is way more accurate than the previous MLP model : the accuracy with CNN layers is around 6% higher than the Dense network. This seams logical, as the type of layer used here is coherent with the type of data passing through the network (images). CNN layers allows to keep spatial information in the image, where MLP flatten all dimensions to a single vector for each image.
+We can see that the model based on CNN is way more accurate than the previous MLP model : the accuracy with CNN layers is around 7% higher than the Dense network. This seams logical, as the type of layer used here is coherent with the type of data passing through the network (images). CNN layers allows to keep spatial information in the image, where MLP flatten all dimensions to a single vector for each image. However, as the scores in the next point show, we can get better results by changing the configuration of the CNN network and in particular by adding more convolution layers.
 
 
 ### Deeper CNN
