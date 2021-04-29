@@ -3,7 +3,7 @@
 * Jean Demeusy
 * 06.05.2021
 
-## Exercice 1
+## Exercise 1
 
 Description of data augmentation (DA) strategies :
 
@@ -45,7 +45,7 @@ When we take a look on the accuracy graphs, we can also see that testing accurac
 
 c) If the main goal of the model is to have a high accuracy, than the DA v4 is the best strategy. If the goal is to reduce overfitting, DA v1 seams to be better, because the accuracy curves are following each other well in this strategy.
 
-## Exercice 2
+## Exercise 2
 
 Here is what we've got as activation for a given image of the set :
 Sample image :
@@ -65,3 +65,10 @@ This layer takes the previous activation as input, and apply a "ReLu" activation
 ![ex2_maxpool.png](ex2_maxpool.png)
 
 This layer create a more pixelated image than the one used as input. For each (2x2) pixels, it takes only the highest value, and then move to the next (2x2) pixels. We can in deed see that the image is way more pixelated than before.
+
+## Exercise 4
+The main changes in this network compared to the previous one are 
+1. simplification of the model architecture and reduction of complexity.
+2. Use of more Inceptions models
+3. Addition of Stem layer before Inception blocks (Set of operations performed with Inception blocks)
+4. Using Reduction Blocks which are used to change the width and height of the grid.
