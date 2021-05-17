@@ -43,4 +43,55 @@ It can be seen that the model with the best accuracy is model number 3 with mult
 
 We notice with this lab and the 2 previous ones that the accuracy of the models is around 0.70% and cannot be significantly exceeded despite all attempts.
 
-Translated with www.DeepL.com/Translator (free version)
+## Exercice 2
+The base model chosen is MobileNet.
+
+### Architecture 1
+Hyperparameters:
+* Learning Rate : 0.001
+* Batch Size = 128
+* Epoch = 20
+
+ Model | Architecture description | Acc. train | Acc. test |
+|-----|--------------------------|------------|-----------|
+|  1 | MobileNet - Flatten - Dropout(0.5) - Dense(20)  | 0.94 | 0.68 |
+
+Loss architecure 1:
+![Ex2-arch1-loss.PNG](Ex2-arch1-loss.PNG)
+
+Accuracy architecture 1:
+![Ex2-arch1-acc.PNG](Ex2-arch1-acc.PNG)
+
+
+We can see that despite the performance of the model, it overfits a lot and will not be retained for the fine-tuning phase.
+
+### Architecture 2
+Hyperparameters:
+* Learning Rate : 0.001
+* Batch Size = 128
+* Epoch = 20
+
+ Model | Architecture description | Acc. train | Acc. test |
+|-----|--------------------------|------------|-----------|
+|  2 | MobileNet - Flatten - Dropout(0.5) - Dense(32)  - Dropout(0.5) - Dense(20) |  |  |
+
+Loss architecure 2:
+![Ex2-arch2-loss.PNG](Ex2-arch2-loss.PNG)
+
+Accuracy architecture 2:
+![Ex2-arch2-acc.PNG](Ex2-arch2-acc.PNG)
+
+Hyperparameters fine tuning:
+* Learning Rate : 0.00000001
+* Batch Size = 128
+* Epoch = 20
+
+Loss fine-tuning architecure 2:
+![Ex2-arch2-finetune-loss.PNG](Ex2-arch2-finetune-loss.PNG)
+
+Accuracy fine-tuning architecture 2:
+![Ex2-arch2-finetune-acc.PNG](Ex2-arch2-finetune-acc.PNG)
+
+### Discussion
+We can see that despite the fact that the first architecture gives better results it overfits a lot. The second architecture gives less good results but overfits less. This second model is therefore more stable and has been retained to perform the finetuning. 
+We can see that the finetuning has only slightly improved the score of the model. The accuracy has gone from about **0.4614** to **0.4845**.
