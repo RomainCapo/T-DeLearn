@@ -95,3 +95,24 @@ Accuracy fine-tuning architecture 2:
 ### Discussion
 We can see that despite the fact that the first architecture gives better results it overfits a lot. The second architecture gives less good results but overfits less. This second model is therefore more stable and has been retained to perform the finetuning. 
 We can see that the finetuning has only slightly improved the score of the model. The accuracy has gone from about **0.4614** to **0.4845**.
+
+
+## Exercise 3
+
+Input and output of the autoencodeur:
+![ex3_input_output_autoencodeur.PNG](ex3_input_output_autoencodeur.PNG)
+
+Prediction with autoencodeur:
+![ex3_autoencodeur_prediction.PNG](ex3_autoencodeur_prediction.PNG)
+
+
+f) We could train a classifier on the input data. The model obtained is then saved, and used with the images obtained with the decoder. Then the performance could be estimated with the evaluation of recall, f1scor or precision.
+
+g) With the SVM, we get a calssification accuracy of 90%.
+SVM results:
+![ex3_svm.PNG](ex3_svm.PNG)
+
+
+Denoising with autoencodeur (noise_level = 0.3):
+![ex3_autoencodeur_denoising.PNG](ex3_autoencodeur_denoising.PNG)
+
